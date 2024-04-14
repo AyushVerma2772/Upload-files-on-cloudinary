@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload files</title>
+</head>
+
+<body>
+    <form action="/files/upload" method="post" enctype="multipart/form-data">
+        <label for="files">Upload files</label>
+        <input type="file" name="files" id="files" multiple="true">
+        <button>Submit</button>
+    </form>
+
+    
+
+    <% if (filesUrl && filesUrl.length) { %>
+        
+        <% for( let url of filesUrl ) { %>
+            <img src="<%= url %>" alt="clouding-img" width="150">
+        <% } %>
+
+     
+    <% } %>
+
+</body>
+
+</html>
