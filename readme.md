@@ -1,4 +1,4 @@
-# File upload using multer and cloudinary
+# Upload files using multer on cloudinary
 
 ## Steps
 - Step 1: Require Multer and Cloudinary
